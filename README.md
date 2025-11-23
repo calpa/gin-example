@@ -12,7 +12,7 @@ This is a minimal example of a web server built with the [Gin](https://github.co
 Clone the repository:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/calpa/gin-example.git
 cd gin-example
 ```
 
@@ -46,6 +46,21 @@ Hello, World!
 
 - `main.go` – entry point that sets up the Gin router and defines the `/` route.
 - `.gitignore` – standard ignores for a Go project.
+
+## Run with Docker
+
+You can build and run this example using Docker:
+
+```bash
+docker build -t gin-example .
+docker run --rm -p 8080:8080 gin-example
+```
+
+Then visit:
+
+```bash
+http://localhost:8080/
+```
 
 ## Customization
 
